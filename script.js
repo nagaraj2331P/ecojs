@@ -1,2 +1,2 @@
-// You can add interactivity here
-console.log("EcoAI page loaded.");
+// Add JS interactions if needed later
+console.log("EcoAI site loaded.");
