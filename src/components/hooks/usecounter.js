@@ -1,11 +1,15 @@
-import { useState } from 'react';
+import React from 'react';
+import useCounter from '../hooks/useCounter';
 
-export default function useCounter(initial = 0) {
-  const [count, setCount] = useState(initial);
+export default function CounterComponent() {
+  const { count, increment, decrement, reset } = useCounter(0);
 
-  const increment = () => setCount((prev) => prev + 1);
-  const decrement = () => setCount((prev) => prev - 1);
-  const reset = () => setCount(initial);
-
-  return { count, increment, decrement, reset };
+  return (
+    <div>
+      <h2>Count: {count}</h2>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
+      <button onClick={reset}>Reset</button>
+    </div>
+  );
 }
