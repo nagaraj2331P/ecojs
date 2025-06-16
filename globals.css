@@ -24,7 +24,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: green;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -33,5 +33,5 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #66bb6a; /* Lighter green on hover */
+  background-color: green; /* Lighter green on hover */
 }
